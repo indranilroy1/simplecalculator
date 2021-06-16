@@ -45,6 +45,6 @@ e2.grid(row=1,column=1)
 Button(root,text="Add",bd='15',bg="orange",command=calculator).grid(row = 5,column=0,pady=0,padx=4)
 Button(root,text="Multipy",bd='15',bg="blue",command=mul).grid(row=6,column=0,pady=1,padx=5)
 Button(root,text="Sub",bd='15',bg="green",command=sub).grid(row=7,column=0,pady=0,padx=5)
-Button(root,text="Divide",bd='15',bg="red",command=div).grid(row=7,column=0,pady=10,padx=7)
+Button(root,text="Divide",bd='15',bg="red",command=div).grid(row=8,column=0,pady=10,padx=7)
 
 root.mainloop()
