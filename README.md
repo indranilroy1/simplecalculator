@@ -15,27 +15,37 @@ def sub():
    e=int(e1.get())
    g=int(e2.get())
    h=e-g
-   txtvr.set(h)
+   txtvrsub.set(h)
 def mul():
    f=int(e1.get())
    i=int(e2.get())
    j=f*i
-   txtvr.set(j)
+   txtvrmul.set(j)
 def div():
    k=int(e1.get())
    l=int(e2.get())
    m=k/l
-   txtvr.set(m)
+   txtvrdiv.set(m)
 
 
 
 
 
 txtvr=StringVar()
+txtvrsub=StringVar()
+txtvrmul=StringVar()
+txtvrdiv=StringVar()
+
 Label(root,text="Give First Number").grid(row=0,column=0)
 Label(root,text="Give Second Number").grid(row=1,column=0)
-Label(root,text="Result").grid(row=3,column=0)
-result=Label(root,text=" ",textvariable=txtvr).grid(row=3,column=1)
+Label(root,text="Result").grid(row=5,column=1)
+result=Label(root,text=" ",textvariable=txtvr).grid(row=5,column=2)
+Label(root,text="Result").grid(row=7,column=1)
+result=Label(root,text=" ",textvariable=txtvrsub).grid(row=7,column=2)
+Label(root,text="Result").grid(row=6,column=1)
+result=Label(root,text=" ",textvariable=txtvrmul).grid(row=6,column=2)
+Label(root,text="Result").grid(row=8,column=1)
+result=Label(root,text=" ",textvariable=txtvrdiv).grid(row=8,column=2)
 
 e1= Entry(root)
 e2= Entry(root)
